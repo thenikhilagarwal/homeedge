@@ -1,0 +1,151 @@
+<!--Slider Section Start-->
+<div class="site-slider-main pb-5">
+  <div class="site-slider">
+    <owl-carousel-o [options]="customOptions">
+      <ng-container *ngFor="let slide of sliderImg">
+        <ng-template carouselSlide [id]="slide.id">
+          <img [src]="slide.src" class="d-block w-100" [alt]="slide.id">
+        </ng-template>  
+      </ng-container>
+    </owl-carousel-o>   
+  </div>
+</div>
+<!--Slider Section End-->
+<!--Feather Section End-->
+<section class="feather-section my-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="feather-itme">
+          <div class="feather-img">
+            <img src="../../../assets/images/icons/truck.svg">
+          </div>
+          <h5>FAST SHIPPING</h5>
+          <p>48h dispatch on most items</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="feather-itme">
+          <div class="feather-img">
+            <img src="../../../assets/images/icons/rack.svg">
+          </div>
+          <h5>HUGE RANGE</h5>
+          <p>1300 +product available</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="feather-itme">
+          <div class="feather-img">
+            <img src="../../../assets/images/icons/refresh.svg">
+          </div>
+          <h5>30 DAY RETURNS</h5>
+          <p>For peace of mind</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Feather Section End-->
+<!--Shop by category Section Start-->
+<div class="category-section">
+  <div class="section-header">
+    <h2>Shop By Categories</h2>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="cateory-item">
+          <a href="">
+            <img src="{{catImg1}}" class="img-fluid">
+          </a>
+          <h4>BEADROOM</h4>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="cateory-section-right">
+          <div class="cateory-item mb-3">
+            <a href="">
+              <img src="{{catImg2}}" class="img-fluid">
+            </a>
+            <h4>DINING ROOM</h4>
+          </div>
+          <div class="cateory-item">
+            <a href="">
+              <img src="{{catImg3}}" class="img-fluid">
+            </a>
+            <h4>LIVING ROOM</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Shop by category Section End-->
+<!--featured product Section Start-->
+<section class="featured-prouduct-section my-5">
+  <div class="section-header">
+    <h2>Featured Products</h2>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-4 col-6" *ngFor="let fetItem of prodItem">
+        <div class="featured-prouduct-item">
+          <div class="item-img">
+            <a href=""><img [src]="fetItem.src" class="img-fluid"></a>
+            <span class="off">{{fetItem.off}}</span>
+            <p class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </p>
+          </div>
+          <div class="item-discription">
+            <h5><a href="">{{fetItem.title}}</a></h5>
+            <p><i class="fa fa-rupee"></i> {{fetItem.price}} <del><i class="fa fa-rupee"></i> {{fetItem.offPrice}}</del></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--featured product Section End-->
+<!--paralex Section Start-->
+<section class="peralex-section">
+  <div class="container">
+    <div class="peralex-content text-center">
+      <h3>MAKE IN INDIA</h3>
+      <h5>The heart of Wooden Street</h5>
+      <p class="m-0">At every manufacturing facility within homeedge, Artisans and their craft are given prime importance.</p>
+    </div>
+  </div>
+</section>
+<!--paralex Section End-->
+<!--testimonial Section Start-->
+<section class="testimonial-section py-5">
+  <div class="section-header">
+    <h2>Our Happy Customers</h2>
+  </div>
+  <div class="container">
+    <div class="testimonial-slider">
+      <owl-carousel-o [options]="testimonialOptions">
+        <ng-container *ngFor="let testimonialslide of testimonialImg">
+          <ng-template carouselSlide [id]="testimonialslide.id">
+            <div class="testimonial-content">
+              <i class="fa fa-quote-right"></i>
+              <p class="m-0">{{testimonialslide.clientSay}} </p>
+            </div>
+            <div class="testi-client">
+              <img [src]="testimonialslide.src" class="d-block w-100" [alt]="testimonialslide.id">
+              <h6>{{testimonialslide.clientName}}</h6>
+              <p class="m-0"><i>({{testimonialslide.clientLocation}})</i></p>
+            </div>
+          </ng-template>  
+        </ng-container>
+      </owl-carousel-o>
+    </div>
+  </div>
+</section>
+<!--testimonial Section End-->
+

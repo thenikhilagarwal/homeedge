@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+@import '_vars.scss';
+.site-slider{
+    .owl-nav{
+        margin: 0px;
+        div{
+            position: absolute;
+            top: 50%;
+            background-color: transparent !important;
+            color: #000 !important;
+            border-radius: 0px !important;
+            padding: 0 !important;
+            font-weight: bold;
+            font-size: 30px !important;
+            height: 50px;
+            line-height: 50px;
+            width: 50px;
+            transform: translate(0%, -50%);
+            font-family: monospace;
+        }
+        .owl-prev{
+            left: 0px !important;
+        }
+        .owl-next{
+            right: 0px !important;
+        }
+    }
+}
+.testimonial-slider{
+    .owl-item:nth-child(odd){
+        .testimonial-content{
+            background-color: $theme-dark-color !important;
+            color: $white-text;
+            &:after{
+                border-top-color: $theme-dark-color !important;
+            }
+        }
+    }
+}

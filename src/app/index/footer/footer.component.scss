@@ -1,0 +1,80 @@
+@import '../../../vars.scss';
+.newsletter-section{
+    background-color: $theme-dark-color;
+    padding: 15px 0px;
+    .newsletter-content{
+        color: $white-text;
+        p{
+            font-size: 14px;
+        }
+    }
+    .newlsetter-form{
+        position: relative;
+        input{
+            border-radius: 30px;
+            border: 0px;
+            font-size: 14px;
+            padding: 12px 15px;
+            padding-right: 30px;
+        }
+        button{
+            position: absolute;
+            top: 10px;
+            background-color: transparent;
+            border: 0px;
+            right: 15px;
+            padding: 0px;
+        }
+    }
+}
+footer{
+    .footer-menu{
+        border-right: 1px solid #ccc;
+        height: 100%;
+        h6{
+            margin-bottom: 15px;
+        }
+        ul{
+            list-style: none;
+            margin: 0px;
+            padding:0px;
+            li{
+                a{
+                    color: #646464;
+                    text-decoration: none;
+                    display: block;
+                }
+                + li{
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+    .instagram-section{
+        h4{
+            margin-bottom: 15px;
+        }
+        ul{
+            list-style: none;
+            padding:0px;
+            margin: 0px;
+            li{
+                width: 20%;
+                float: left;
+                margin-right: 15px;
+                margin-bottom: 15px;
+                a{
+                    display: block;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .copyright{
+        border-top: 1px solid #ccc;
+        margin-top: 30px;
+        padding: 20px 0px;    
+    }
+}

@@ -1,0 +1,73 @@
+<section class="newsletter-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="newsletter-content">
+                    <h5 class="m-0">JOIN OUR MAILING LIST</h5>
+                    <p class="m-0">The makers-exporter-designers of Handcrafted solid wood furniture bed coffee table</p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="newlsetter-form">
+                    <input type="text" class="form-control" placeholder="ENTER YOU EMAIL">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="pt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="footer-menu">
+                    <div class="row">
+                        <div class="col-4">
+                            <h6>Company</h6>
+                            <ul>
+                                <li><a href="">About us</a></li>
+                                <li><a href="">Career</a></li>
+                                <li><a href="">Media</a></li>
+                                <li><a href="">Get in Touch</a></li>
+                                <li><a href="">Customer Stories</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <h6>Services</h6>
+                            <ul>
+                                <li><a href="">Our Stores</a></li>
+                                <li><a href="">Custom Furniture</a></li>
+                                <li><a href="">Exports</a></li>
+                                <li><a href="">Buy in Bulk</a></li>
+                                <li><a href="">Delivery Location</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <h6>Policies</h6>
+                            <ul>
+                                <li><a href="">Terms of Use</a></li>
+                                <li><a href="">Security</a></li>
+                                <li><a href="">Return & Refund</a></li>
+                                <li><a href="">Payment Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="instagram-section">
+                    <h4>INSTAGRAM</h4>
+                    <ul class="clearfix">
+                        <li *ngFor="let insta of instaPort"><a href=""><img [src]="insta.src" class="img-fluid"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="m-0 text-center">
+                © {{animo}} HOME EDGE - ALL RIGHTS RESERVED.
+            </p>
+        </div>
+    </div>
+
+</footer>
